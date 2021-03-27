@@ -1,0 +1,18 @@
+// путь до импортируемых файлов, прописывается относительно файла style.scss
+
+@import "./utilities/reset.scss";
+@import "./utilities/fonts.scss";
+@import "./utilities/vars.scss";
+@import "./utilities/mixins.scss";
+
+@import "./modules/common-styles.scss";
+@import "./modules/header.scss";
+@import "./modules/nav.scss";
+@import "./modules/intro.scss";
+@import "./modules/information.scss";
+@import "./modules/reviews.scss";
+@import "./modules/contacts.scss";
+@import "./modules/footer.scss";
+@import "./modules/social.scss";
+@import "./modules/copy.scss";
+@import "./modules/tariff.scss";

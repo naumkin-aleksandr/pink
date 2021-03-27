@@ -1,0 +1,27 @@
+.copy {
+    display: flex;
+    align-items: center;
+
+    &:hover .copy__icon {
+        fill: #283645;
+    }
+
+    &:active .copy__icon {
+        fill: #bfc3c7;
+    }
+
+    &__text {
+        margin-right: 15px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #283645;
+    }
+
+    &__icon {
+        transition: 0.2s;
+
+        fill: $danger-color;
+    }
+}

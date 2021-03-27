@@ -1,0 +1,30 @@
+.footer {
+    padding: 40px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    &__logo {
+        margin-bottom: 40px;
+
+        &-icon {
+            fill: #283645;
+            transition: 0.2s;
+
+            &:hover {
+                fill: $danger-color;
+            }
+
+            &:active {
+                fill: #283645;
+                opacity: 0.3;
+            }
+        }
+    }
+
+    &__social {
+        margin-bottom: 40px;
+    }
+
+    // &__copy
+}

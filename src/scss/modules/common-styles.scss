@@ -1,0 +1,70 @@
+body {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.page {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.nav-point {
+    margin-right: 20px;
+    width: 7px;
+    height: 7px;
+    background: #bfc3c7;
+    // border: 3px solid transparent;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover:not(.nav-point_current) {
+        background: #7e868f;
+    }
+
+    &:active {
+        background: #283645;
+        opacity: 0.1;
+    }
+
+    &_current {
+        background: #fff;
+        box-shadow: 0 0 0 3px #283645;
+    }
+}
+
+.triangle-top {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 320px;
+        height: 30px;
+        border-top: 15px solid transparent;
+        border-left: 160px solid transparent;
+        border-right: 160px solid $default-color;
+        border-bottom: 15px solid $default-color;
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+}

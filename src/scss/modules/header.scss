@@ -1,0 +1,107 @@
+.header {
+    &__box {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_active {
+            background: #283645;
+            border-bottom: 1px solid #000;
+        }
+    }
+
+    &__logo-icon {
+        fill: #fff;
+        transition: 0.2s;
+        &:hover {
+            fill: $danger-color;
+        }
+    }
+
+    &__btn-menu {
+        width: 50px;
+        height: 24px;
+        background: none;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            width: 50px;
+            height: 4px;
+            background: #fff;
+            border-radius: 2px;
+            box-shadow: 0 10px 0 0 #fff, 0 20px 0 0 #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:hover::before {
+            background: $danger-color;
+            box-shadow: 0 10px 0 0 $danger-color, 0 20px 0 0 $danger-color;
+        }
+
+        &:active::before {
+            background: $danger-color;
+            box-shadow: 0 10px 0 0 $danger-color, 0 20px 0 0 $danger-color;
+            opacity: 0.3;
+        }
+
+        &-close {
+            width: 23px;
+            height: 23px;
+
+            &::before {
+                content: "";
+                width: 30px;
+                height: 2px;
+                background: #fff;
+                position: absolute;
+                box-shadow: none;
+                top: 0;
+                left: 0;
+                transform-origin: 1px 2px;
+                transform: rotate(45deg);
+                // transition: 0.2s;
+            }
+
+            &::after {
+                content: "";
+                width: 30px;
+                height: 2px;
+                background: #fff;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform-origin: 29px 2px;
+                transform: rotate(-45deg);
+                // transition: 0.2s;
+            }
+
+            &:hover::after,
+            &:hover::before {
+                background: $danger-color;
+                box-shadow: none;
+            }
+
+            &:active::after,
+            &:active::before {
+                background: $danger-color;
+                opacity: 0.3;
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__nav {
+        max-height: 0;
+        overflow: hidden;
+
+        &_active {
+            max-height: 1000px;
+        }
+    }
+}

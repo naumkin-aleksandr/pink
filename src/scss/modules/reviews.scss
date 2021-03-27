@@ -1,0 +1,20 @@
+.reviews {
+    padding: 50px 20px;
+
+    &__box {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__name {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &__wrap-btn {
+        display: flex;
+        justify-content: center;
+    }
+}
