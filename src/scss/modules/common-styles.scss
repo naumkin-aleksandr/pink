@@ -8,6 +8,7 @@ body {
 .page {
     width: 320px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .visuallyhidden {
@@ -28,7 +29,6 @@ body {
     width: 7px;
     height: 7px;
     background: #bfc3c7;
-    // border: 3px solid transparent;
     border-radius: 50%;
     transition: 0.2s;
     cursor: pointer;
@@ -66,5 +66,28 @@ body {
         position: absolute;
         top: -30px;
         left: 0;
+    }
+}
+
+@media (min-width: 660px) {
+    .page {
+        width: 660px;
+    }
+
+    .triangle-top {
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 660px;
+            height: 50px;
+            border-top: 25px solid transparent;
+            border-left: 330px solid transparent;
+            border-right: 330px solid $default-color;
+            border-bottom: 25px solid $default-color;
+            position: absolute;
+            top: -50px;
+            left: 0;
+        }
     }
 }

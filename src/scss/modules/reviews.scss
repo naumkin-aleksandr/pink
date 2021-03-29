@@ -6,7 +6,11 @@
         text-align: center;
     }
 
-    &__name {
+    &__data-user {
+        display: none;
+    }
+
+    &__name-user {
         margin-bottom: 20px;
         font-weight: 700;
         font-size: 18px;
@@ -16,5 +20,28 @@
     &__wrap-btn {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (min-width: 660px) {
+    .reviews {
+        &__item {
+            display: flex;
+            flex-flow: column-reverse;
+        }
+
+        &__data-user {
+            display: block;
+        }
+
+        &__name-user {
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
     }
 }

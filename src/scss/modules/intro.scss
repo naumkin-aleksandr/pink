@@ -91,3 +91,56 @@
         }
     }
 }
+
+@media (min-width: 660px) {
+    .intro {
+        padding-top: 102px;
+
+        &::before {
+            content: "";
+            width: 1200px;
+            height: 729px;
+            background-image: url(../img/iphone-hand-tablet@1x.png),
+                url(../img/bg-back-tablet@1x.jpg);
+            background-size: 660px 545px, 1200px 729px;
+
+            top: -110px;
+        }
+
+        &__title {
+            width: 300px;
+            margin-bottom: 39px;
+            padding: 0 30px;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        &__box_dark-blue {
+            width: 340px;
+            padding: 0 20px 92px;
+            background: none;
+        }
+
+        &__box-icon {
+            padding: 46px 46px 0;
+            margin-bottom: 38px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    @media (min-resolution: 2dppx) {
+        .intro {
+            &::before {
+                background-image: url(../img/iphone-hand-tablet@2x.png),
+                    url(../img/bg-back-tablet@2x.jpg);
+            }
+        }
+    }
+}
