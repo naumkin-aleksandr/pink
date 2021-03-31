@@ -1,3 +1,4 @@
-import './html/index.html';
-import './js/main';
-import './scss/style.scss';
+import "./html/index.html";
+import "./html/contest.html";
+import "./js/main";
+import "./scss/style.scss";

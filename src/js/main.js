@@ -20,7 +20,9 @@ function openMenu() {
 const tariffBoxBtn = document.querySelector("#tariff-box-btn"),
     tariffTable = document.querySelector("#tariff-table");
 
-tariffBoxBtn.addEventListener("click", moveTable());
+if (tariffBoxBtn) {
+    tariffBoxBtn.addEventListener("click", moveTable());
+}
 
 function moveTable() {
     let navPointCurrent = document.querySelector("[data-tariff-btn='2']");
@@ -57,7 +59,11 @@ function moveTable() {
 }
 
 // map
-ymaps.ready(init);
+
+if (document.querySelector("#map")) {
+    ymaps.ready(init);
+}
+
 function init() {
     const myMap = new ymaps.Map("map", {
         center: [59.93919, 30.32311],

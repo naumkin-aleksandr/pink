@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="/assets/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <title>pink конкурс</title>
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header__box">
+                    <a class="header__logo" href="index.html">
+                        <svg
+                            class="header__logo-icon header__logo-icon_mobile"
+                            width="74.426px"
+                            height="22.859px"
+                        >
+                            <use
+                                href="../img/svg-sprite.svg#logo-pink-white-mobile"
+                            ></use>
+                        </svg>
+
+                        <svg
+                            class="header__logo-icon header__logo-icon_tablet"
+                            width="146.3px"
+                            height="40.375px"
+                        >
+                            <use
+                                href="../img/svg-sprite.svg#logo-pink-white-tablet"
+                            ></use>
+                        </svg>
+                        <svg
+                            class="header__logo-icon header__logo-icon_desktop"
+                            width="146.3px"
+                            height="40.375px"
+                        >
+                            <use
+                                href="../img/svg-sprite.svg#logo-pink-white-desktop"
+                            ></use>
+                        </svg>
+                    </a>
+
+                    <button class="header__btn-menu" id="btn-menu"></button>
+                </div>
+
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Фотографии</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="contest.html">Конкурс</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- /.header -->
+
+            <main class="contest">
+                <h1 class="contest__title">
+                    Конкурс на самое безбашенное путешествие с Пинк
+                </h1>
+
+                <p class="contest__text">
+                    Поделитесь своей историей и получите шанс выиграть ценный
+                    приз &#8212; 1000 миль на вашу бонусную карту!
+                </p>
+
+                <form class="contest__form form-contest" action="">
+                    <fieldset class="form-contest__box">
+                        <div class="form-contest__bl">
+                            <label class="form-contest__label-text" for=""
+                                >Фамилия:</label
+                            >
+                            <input
+                                class="form-contest__input-text"
+                                type="text"
+                            />
+                        </div>
+
+                        <div class="form-contest__bl">
+                            <label class="form-contest__label-text" for=""
+                                >Имя:</label
+                            >
+                            <input
+                                class="form-contest__input-text"
+                                type="text"
+                            />
+                        </div>
+
+                        <div class="form-contest__bl">
+                            <label class="form-contest__label-text" for=""
+                                >Отчество:</label
+                            >
+                            <input
+                                class="form-contest__input-text"
+                                type="text"
+                            />
+                        </div>
+                    </fieldset>
+                    <!-- /.form-contest__box -->
+                    <fieldset class="form-contest__box">
+                        <legend class="form-contest__subtitle">
+                            Ваши безбашенные достижения в путешествии
+                        </legend>
+
+                        <input
+                            class="form-contest__iput-checkbox visuallyhidden"
+                            id=""
+                            type="checkbox"
+                            name="input-attainment"
+                        />
+                        <label class="form-contest__label-checkbox" for=""
+                            >Сделал селфи с акулой</label
+                        >
+
+                        <input
+                            class="form-contest__iput-checkbox visuallyhidden"
+                            id=""
+                            type="checkbox"
+                            name="input-attainment"
+                        />
+                        <label class="form-contest__label-checkbox" for=""
+                            >Обгорел на пляже</label
+                        >
+
+                        <input
+                            class="form-contest__iput-checkbox visuallyhidden"
+                            id=""
+                            type="checkbox"
+                            name="input-attainment"
+                        />
+                        <label class="form-contest__label-checkbox" for=""
+                            >Видел Чака Норриса</label
+                        >
+
+                        <input
+                            class="form-contest__iput-checkbox visuallyhidden"
+                            id=""
+                            type="checkbox"
+                            name="input-attainment"
+                        />
+                        <label class="form-contest__label-checkbox" for=""
+                            >Накупил сувениров</label
+                        >
+
+                        <input
+                            class="form-contest__iput-checkbox visuallyhidden"
+                            id=""
+                            type="checkbox"
+                            name="input-attainment"
+                        />
+                        <label class="form-contest__label-checkbox" for=""
+                            >Удержал башню</label
+                        >
+
+                        <input
+                            class="form-contest__iput-checkbox visuallyhidden"
+                            id=""
+                            type="checkbox"
+                            name="input-attainment"
+                        />
+                        <label class="form-contest__label-checkbox" for=""
+                            >Разгромил отель</label
+                        >
+                    </fieldset>
+                    <!-- /.form-contest__box -->
+                    <fieldset class="form-contest__box">
+                        <div class="form-contest__bl">
+                            <label class="form-contest__label-text" for=""
+                                >Номер телефона</label
+                            >
+                            <input
+                                class="form-contest__input-text"
+                                type="tel"
+                            />
+                        </div>
+                        <div class="form-contest__bl">
+                            <label class="form-contest__label-text" for=""
+                                >Адрес почты</label
+                            >
+                            <input
+                                class="form-contest__input-text"
+                                type="email"
+                            />
+                        </div>
+                    </fieldset>
+                    <!-- /.form-contest__box -->
+                    <fieldset class="form-contest__box">
+                        <legend class="form-contest__subtitle">
+                            С каким приложением путешествовали?
+                        </legend>
+
+                        <input
+                            class="form-contest__input-radio visuallyhidden"
+                            id=""
+                            type="radio"
+                            name="input-appendix"
+                        />
+                        <label class="form-contest__label-radio" for=""
+                            >Pink для IOS</label
+                        >
+
+                        <input
+                            class="form-contest__input-radio visuallyhidden"
+                            id=""
+                            type="radio"
+                            name="input-appendix"
+                        />
+                        <label class="form-contest__label-radio" for=""
+                            >Pink на Android</label
+                        >
+
+                        <input
+                            class="form-contest__input-radio visuallyhidden"
+                            id=""
+                            type="radio"
+                            name="input-appendix"
+                        />
+                        <label class="form-contest__label-radio" for=""
+                            >Windows Phone</label
+                        >
+                    </fieldset>
+                    <!-- /.form-contest__box -->
+                    <fieldset class="form-contest__box">
+                        <legend class="form-contest__subtitle">
+                            Опишите эмоции
+                        </legend>
+
+                        <textarea
+                            class="form-contest__textarea"
+                            id=""
+                            name=""
+                        ></textarea>
+                    </fieldset>
+                    <!-- /.form-contest__box -->
+                    <button class="form-contest__btn">Отправить форму</button>
+                    <p class="form-contest__mandatory-conditions">
+                        *&mdash;обязательные поля
+                    </p>
+                </form>
+            </main>
+            <!-- /.contest -->
+
+            <footer class="footer">
+                <a class="footer__logo" href="index.html">
+                    <svg
+                        class="footer__logo-icon footer__logo-icon_mobile"
+                        width="146.3px"
+                        height="40.375px"
+                    >
+                        <use
+                            href="../img/svg-sprite.svg#logo-pink-black-mobile"
+                        ></use>
+                    </svg>
+
+                    <svg
+                        class="footer__logo-icon footer__logo-icon_desktop"
+                        width="146.3px"
+                        height="40.375px"
+                    >
+                        <use
+                            href="../img/svg-sprite.svg#logo-pink-black-desktop"
+                        ></use>
+                    </svg>
+                </a>
+                <div class="footer__social social">
+                    <a class="social__link" href="#">
+                        <svg
+                            class="social__icon"
+                            width="17.5px"
+                            height="14.663px"
+                        >
+                            <use
+                                href="../img/svg-sprite.svg#icon-twitter"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a class="social__link" href="#">
+                        <svg
+                            class="social__icon"
+                            width="8.673px"
+                            height="18.944px"
+                        >
+                            <use
+                                href="../img/svg-sprite.svg#icon-facebook"
+                            ></use>
+                        </svg>
+                    </a>
+                    <a class="social__link" href="#">
+                        <svg
+                            class="social__icon"
+                            width="14.64px"
+                            height="13.96px"
+                        >
+                            <use
+                                href="../img/svg-sprite.svg#icon-youtube"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <a class="copy" href="#">
+                    <span class="copy__text">Разработано</span>
+                    <svg class="copy__icon" width="41px" height="41px">
+                        <use
+                            href="../img/svg-sprite.svg#htmlacademy-logo"
+                        ></use>
+                    </svg>
+                </a>
+            </footer>
+            <!-- /.footer -->
+        </div>
+        <!-- /.page -->
+    </body>
+</html>
