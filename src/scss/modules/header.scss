@@ -1,7 +1,8 @@
 .header {
+    background: rgba(0, 0, 0, 0.3);
+
     &__box {
         padding: 20px;
-        background: rgba(0, 0, 0, 0.3);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -20,6 +21,10 @@
         }
 
         &_tablet {
+            display: none;
+        }
+
+        &_desktop {
             display: none;
         }
     }
@@ -121,6 +126,38 @@
             &_tablet {
                 display: block;
             }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 27px 130px 43px;
+
+        &__box {
+            padding: 0;
+        }
+
+        &__logo-icon {
+            &_tablet {
+                display: none;
+            }
+
+            &_desktop {
+                display: block;
+                background: none;
+            }
+        }
+
+        &__btn-menu {
+            display: none;
+        }
+
+        &__nav {
+            max-height: none;
         }
     }
 }

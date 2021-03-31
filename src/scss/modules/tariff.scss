@@ -97,13 +97,13 @@
 @media (min-width: 660px) {
     .tariff {
         &__table {
-            width: 620px;
-            margin-bottom: 30px;
+            width: 100%;
+            margin-bottom: 0;
             left: 0;
         }
 
         &__header-cell {
-            width: 152px;
+            width: auto;
 
             &:first-child {
                 display: table;
@@ -131,6 +131,36 @@
 
         &__wrap-btn {
             display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .tariff {
+        &__wrap {
+            padding: 80px 130px 98px;
+        }
+
+        &__header-cell {
+            &_hit {
+                &::before {
+                    height: 25px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__price {
+            font-size: 24px;
+        }
+
+        &__cell {
+            padding-left: 22px;
+            font-size: 18px;
         }
     }
 }

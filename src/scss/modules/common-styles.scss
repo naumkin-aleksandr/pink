@@ -75,19 +75,32 @@ body {
     }
 
     .triangle-top {
-        position: relative;
-
         &::before {
-            content: "";
             width: 660px;
             height: 50px;
             border-top: 25px solid transparent;
             border-left: 330px solid transparent;
             border-right: 330px solid $default-color;
             border-bottom: 25px solid $default-color;
-            position: absolute;
             top: -50px;
-            left: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .page {
+        width: 1200px;
+    }
+
+    .triangle-top {
+        &::before {
+            width: 1200px;
+            height: 70px;
+            border-top: 35px solid transparent;
+            border-left: 600px solid transparent;
+            border-right: 600px solid $default-color;
+            border-bottom: 35px solid $default-color;
+            top: -70px;
         }
     }
 }

@@ -144,3 +144,48 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .intro {
+        padding-top: 114px;
+        padding-left: 130px;
+
+        &::before {
+            content: "";
+            width: 2560px;
+            height: 853px;
+            background-image: url(../img/iphone-hand-desktop@1x.png),
+                url(../img/bg-back-desktop@1x.jpg);
+            background-size: 1050px 645px, 2560px 853px;
+            background-position: bottom -1px left 190px, center;
+            top: -110px;
+        }
+
+        &__title {
+            margin-bottom: 51px;
+            padding: 0 20px;
+            font-weight: 300;
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        &__box_dark-blue {
+            width: 300px;
+            padding: 0 0 101px;
+        }
+
+        &__box-icon {
+            padding: 87px 31px 0;
+            margin-bottom: 58px;
+        }
+    }
+
+    @media (min-resolution: 2dppx) {
+        .intro {
+            &::before {
+                background-image: url(../img/iphone-hand-desktop@2x.png),
+                    url(../img/bg-back-desktop@2x.jpg);
+            }
+        }
+    }
+}

@@ -60,7 +60,6 @@
         &__title {
             margin-bottom: 50px;
             padding: 0 60px;
-            font-weight: 300;
             font-size: 40px;
             line-height: 54px;
         }
@@ -73,14 +72,8 @@
         }
 
         &__item {
-            &:last-child {
+            &_centering {
                 margin: 0 auto;
-            }
-        }
-
-        &__text {
-            &_width-small {
-                width: 215px;
             }
         }
 
@@ -93,6 +86,45 @@
                 border-left: 330px solid transparent;
                 border-right: 330px solid transparent;
                 border-top: 50px solid #fff;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .contacts {
+        &__title {
+            margin-bottom: 60px;
+            font-size: 50px;
+            line-height: 64px;
+        }
+
+        &__box {
+            padding: 0 50px 40px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-around;
+        }
+
+        &__item {
+            &_centering {
+                margin: 0;
+            }
+
+            &_last-position {
+                order: 1;
+            }
+        }
+
+        &__map {
+            height: 502px;
+
+            &::before {
+                width: 1200px;
+                height: 100px;
+                border-left: 600px solid transparent;
+                border-right: 600px solid transparent;
+                border-top: 100px solid #fff;
             }
         }
     }

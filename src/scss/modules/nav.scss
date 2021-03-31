@@ -33,3 +33,29 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .nav {
+        &__list {
+            flex-flow: row;
+            justify-content: space-between;
+            background: none;
+        }
+
+        &__item {
+            border-top: none;
+            border-bottom: none;
+            margin-right: 80px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__link {
+            padding: 0;
+            font-weight: 400;
+            text-transform: none;
+        }
+    }
+}

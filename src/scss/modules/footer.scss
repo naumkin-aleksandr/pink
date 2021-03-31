@@ -19,6 +19,10 @@
                 fill: #283645;
                 opacity: 0.3;
             }
+
+            &_desktop {
+                display: none;
+            }
         }
     }
 
@@ -29,6 +33,7 @@
 
 @media (min-width: 660px) {
     .footer {
+        padding: 40px 20px;
         flex-flow: row;
         justify-content: space-between;
 
@@ -38,6 +43,21 @@
 
         &__social {
             margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        padding: 90px 130px;
+        &__logo-icon {
+            &_mobile {
+                display: none;
+            }
+
+            &_desktop {
+                display: block;
+            }
         }
     }
 }
