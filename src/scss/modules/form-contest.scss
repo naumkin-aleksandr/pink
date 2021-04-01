@@ -1,0 +1,178 @@
+.form-contest {
+    &__box {
+        padding-bottom: 40px;
+        border: none;
+        display: flex;
+        flex-flow: column;
+
+        &_bg-gray {
+            background: $default-color;
+        }
+    }
+
+    &__bl {
+        margin-bottom: 25px;
+        padding: 0 20px;
+        display: flex;
+        flex-flow: column;
+
+        &:first-child {
+            margin-top: 40px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label-text {
+        margin-bottom: 10px;
+        padding-left: 23px;
+        text-transform: uppercase;
+        color: $danger-color;
+    }
+
+    &__input-text {
+        width: 100%;
+        height: 59px;
+        padding: 0 10px 0 20px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 18px;
+        color: #283645;
+        border: 2px solid #e5e5e5;
+
+        border-radius: 3px;
+    }
+
+    &__subtitle {
+        padding: 30px 20px 0;
+        margin-bottom: 0 -20px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $danger-color;
+        text-align: center;
+
+        &_bg-gray {
+            background: $default-color;
+        }
+    }
+
+    &__iput-checkbox:checked + .form-contest__label-checkbox::after {
+        opacity: 1;
+    }
+
+    &__label-checkbox {
+        margin-bottom: 43px;
+        padding-left: 79px;
+        font-size: 18px;
+        line-height: 39px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:first-of-type {
+            margin-top: 44px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: "";
+            width: 39px;
+            height: 39px;
+            background: #fff;
+            border: 2px solid #e5e5e5;
+            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: 20px;
+        }
+
+        &::after {
+            content: "";
+            width: 22px;
+            height: 16px;
+            background: url(../img/tick.png) no-repeat center;
+            position: absolute;
+            top: 11px;
+            left: 29px;
+            opacity: 0;
+        }
+    }
+
+    &__input-radio:checked + .form-contest__label-radio::after {
+        opacity: 1;
+    }
+
+    &__label-radio {
+        margin-bottom: 34px;
+        padding-left: 90px;
+        font-size: 18px;
+        line-height: 41px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:first-of-type {
+            margin-top: 38px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: "";
+            width: 41px;
+            height: 41px;
+            border: 2px solid #e5e5e5;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 20px;
+        }
+
+        &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: $danger-color;
+            border-radius: 50%;
+            position: absolute;
+            top: 13px;
+            left: 33px;
+            opacity: 0;
+        }
+    }
+
+    &__textarea {
+        margin: 20px 20px 10px;
+        height: 197px;
+        padding: 20px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #283645;
+        border: 2px solid #e5e5e5;
+        border-radius: 3px;
+    }
+
+    &__btn {
+        width: 280px;
+        margin: 0 20px 40px;
+    }
+
+    &__mandatory-conditions {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-align: center;
+
+        &_red {
+            color: $danger-color;
+        }
+    }
+}

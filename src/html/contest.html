@@ -67,7 +67,7 @@
             <!-- /.header -->
 
             <main class="contest">
-                <h1 class="contest__title">
+                <h1 class="contest__title banner">
                     Конкурс на самое безбашенное путешествие с Пинк
                 </h1>
 
@@ -76,7 +76,7 @@
                     приз &#8212; 1000 миль на вашу бонусную карту!
                 </p>
 
-                <form class="contest__form form-contest" action="">
+                <form class="contest__form form-contest" action="#">
                     <fieldset class="form-contest__box">
                         <div class="form-contest__bl">
                             <label class="form-contest__label-text" for=""
@@ -85,6 +85,7 @@
                             <input
                                 class="form-contest__input-text"
                                 type="text"
+                                placeholder="Укажите фамилию *"
                             />
                         </div>
 
@@ -95,6 +96,7 @@
                             <input
                                 class="form-contest__input-text"
                                 type="text"
+                                placeholder="Введите ваше имя *"
                             />
                         </div>
 
@@ -105,76 +107,98 @@
                             <input
                                 class="form-contest__input-text"
                                 type="text"
+                                placeholder="Ну и отчество тоже"
                             />
                         </div>
                     </fieldset>
                     <!-- /.form-contest__box -->
-                    <fieldset class="form-contest__box">
-                        <legend class="form-contest__subtitle">
+
+                    <fieldset
+                        class="form-contest__box form-contest__box_bg-gray"
+                    >
+                        <legend
+                            class="form-contest__subtitle form-contest__subtitle_bg-gray"
+                        >
                             Ваши безбашенные достижения в путешествии
                         </legend>
 
                         <input
                             class="form-contest__iput-checkbox visuallyhidden"
-                            id=""
+                            id="input-attainment-1"
                             type="checkbox"
                             name="input-attainment"
+                            checked
                         />
-                        <label class="form-contest__label-checkbox" for=""
+                        <label
+                            class="form-contest__label-checkbox"
+                            for="input-attainment-1"
                             >Сделал селфи с акулой</label
                         >
 
                         <input
                             class="form-contest__iput-checkbox visuallyhidden"
-                            id=""
+                            id="input-attainment-2"
                             type="checkbox"
                             name="input-attainment"
+                            checked
                         />
-                        <label class="form-contest__label-checkbox" for=""
+                        <label
+                            class="form-contest__label-checkbox"
+                            for="input-attainment-2"
                             >Обгорел на пляже</label
                         >
 
                         <input
                             class="form-contest__iput-checkbox visuallyhidden"
-                            id=""
+                            id="input-attainment-3"
                             type="checkbox"
                             name="input-attainment"
                         />
-                        <label class="form-contest__label-checkbox" for=""
+                        <label
+                            class="form-contest__label-checkbox"
+                            for="input-attainment-3"
                             >Видел Чака Норриса</label
                         >
 
                         <input
                             class="form-contest__iput-checkbox visuallyhidden"
-                            id=""
+                            id="input-attainment-4"
                             type="checkbox"
                             name="input-attainment"
                         />
-                        <label class="form-contest__label-checkbox" for=""
+                        <label
+                            class="form-contest__label-checkbox"
+                            for="input-attainment-4"
                             >Накупил сувениров</label
                         >
 
                         <input
                             class="form-contest__iput-checkbox visuallyhidden"
-                            id=""
+                            id="input-attainment-5"
                             type="checkbox"
                             name="input-attainment"
+                            checked
                         />
-                        <label class="form-contest__label-checkbox" for=""
+                        <label
+                            class="form-contest__label-checkbox"
+                            for="input-attainment-5"
                             >Удержал башню</label
                         >
 
                         <input
                             class="form-contest__iput-checkbox visuallyhidden"
-                            id=""
+                            id="input-attainment-6"
                             type="checkbox"
                             name="input-attainment"
                         />
-                        <label class="form-contest__label-checkbox" for=""
+                        <label
+                            class="form-contest__label-checkbox"
+                            for="input-attainment-6"
                             >Разгромил отель</label
                         >
                     </fieldset>
                     <!-- /.form-contest__box -->
+
                     <fieldset class="form-contest__box">
                         <div class="form-contest__bl">
                             <label class="form-contest__label-text" for=""
@@ -183,6 +207,7 @@
                             <input
                                 class="form-contest__input-text"
                                 type="tel"
+                                placeholder="Номер, пожалуйста"
                             />
                         </div>
                         <div class="form-contest__bl">
@@ -192,42 +217,55 @@
                             <input
                                 class="form-contest__input-text"
                                 type="email"
+                                placeholder="Введите почту *"
                             />
                         </div>
                     </fieldset>
                     <!-- /.form-contest__box -->
-                    <fieldset class="form-contest__box">
-                        <legend class="form-contest__subtitle">
+
+                    <fieldset
+                        class="form-contest__box form-contest__box_bg-gray"
+                    >
+                        <legend
+                            class="form-contest__subtitle form-contest__subtitle_bg-gray"
+                        >
                             С каким приложением путешествовали?
                         </legend>
 
                         <input
                             class="form-contest__input-radio visuallyhidden"
-                            id=""
+                            id="appendix-1"
                             type="radio"
                             name="input-appendix"
+                            checked
                         />
-                        <label class="form-contest__label-radio" for=""
+                        <label
+                            class="form-contest__label-radio"
+                            for="appendix-1"
                             >Pink для IOS</label
                         >
 
                         <input
                             class="form-contest__input-radio visuallyhidden"
-                            id=""
+                            id="appendix-2"
                             type="radio"
                             name="input-appendix"
                         />
-                        <label class="form-contest__label-radio" for=""
+                        <label
+                            class="form-contest__label-radio"
+                            for="appendix-2"
                             >Pink на Android</label
                         >
 
                         <input
                             class="form-contest__input-radio visuallyhidden"
-                            id=""
+                            id="appendix-3"
                             type="radio"
                             name="input-appendix"
                         />
-                        <label class="form-contest__label-radio" for=""
+                        <label
+                            class="form-contest__label-radio"
+                            for="appendix-3"
                             >Windows Phone</label
                         >
                     </fieldset>
@@ -241,12 +279,18 @@
                             class="form-contest__textarea"
                             id=""
                             name=""
+                            placeholder="Можно прям в красках, не стесняясь в выражениях"
                         ></textarea>
                     </fieldset>
                     <!-- /.form-contest__box -->
-                    <button class="form-contest__btn">Отправить форму</button>
+                    <button class="form-contest__btn btn-rectangle">
+                        Отправить форму
+                    </button>
                     <p class="form-contest__mandatory-conditions">
-                        *&mdash;обязательные поля
+                        <span class="form-contest__mandatory-conditions_red"
+                            >*</span
+                        >
+                        &mdash; обязательные поля
                     </p>
                 </form>
             </main>
