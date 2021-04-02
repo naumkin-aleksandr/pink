@@ -63,6 +63,20 @@ body {
     background: #2aab6d;
     border-radius: 3px;
     cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        background: #1c9b5e;
+    }
+
+    &:active {
+        background: #1c9b5e;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+        background: #e5e5e5;
+    }
 }
 
 .triangle-top {
@@ -92,8 +106,7 @@ body {
         height: 237px;
         background-image: url(../img/bg-back-mobile@1x.jpg);
         background-repeat: no-repeat;
-        background-position: top left;
-        background-size: 320px 462px;
+        background-position: top center;
         position: absolute;
         top: -66px;
         left: 0;
@@ -101,7 +114,7 @@ body {
     }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $width-tablet) {
     .page {
         width: 660px;
     }
@@ -117,9 +130,21 @@ body {
             top: -50px;
         }
     }
+
+    .banner {
+        height: 330px;
+
+        &::before {
+            width: 660px;
+            height: 440px;
+            background-image: url(../img/bg-back-tablet@1x.jpg);
+            background-position: top center;
+            top: -110px;
+        }
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $width-desktop) {
     .page {
         width: 1200px;
     }

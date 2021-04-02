@@ -8,14 +8,38 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     &__text {
         padding: 50px 20px 10px;
         line-height: 30px;
         text-align: center;
+
+        &_hidden {
+            display: none;
+        }
     }
 
     &__form {
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .contest {
+        &__title {
+            padding: 0 40px;
+            font-size: 50px;
+            line-height: 68px;
+        }
+
+        &__text {
+            padding: 100px 80px 40px;
+            font-size: 18px;
+
+            &_hidden {
+                display: block;
+            }
+        }
     }
 }

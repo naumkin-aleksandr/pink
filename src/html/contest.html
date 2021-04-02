@@ -74,38 +74,52 @@
                 <p class="contest__text">
                     Поделитесь своей историей и получите шанс выиграть ценный
                     приз &#8212; 1000 миль на вашу бонусную карту!
+                    <span class="contest__text_hidden"
+                        >Пожалуйста, заполните форму ниже:</span
+                    >
                 </p>
 
                 <form class="contest__form form-contest" action="#">
-                    <fieldset class="form-contest__box">
-                        <div class="form-contest__bl">
-                            <label class="form-contest__label-text" for=""
+                    <fieldset
+                        class="form-contest__box form-contest__box_order-1"
+                    >
+                        <div class="form-contest__bl form-contest__bl_row">
+                            <label
+                                class="form-contest__label-text form-contest__label-text_indent-right"
+                                for="input-surname"
                                 >Фамилия:</label
                             >
                             <input
                                 class="form-contest__input-text"
+                                id="input-surname"
                                 type="text"
                                 placeholder="Укажите фамилию *"
                             />
                         </div>
 
-                        <div class="form-contest__bl">
-                            <label class="form-contest__label-text" for=""
+                        <div class="form-contest__bl form-contest__bl_row">
+                            <label
+                                class="form-contest__label-text form-contest__label-text_indent-right"
+                                for="input-name"
                                 >Имя:</label
                             >
                             <input
                                 class="form-contest__input-text"
+                                id="input-name"
                                 type="text"
                                 placeholder="Введите ваше имя *"
                             />
                         </div>
 
-                        <div class="form-contest__bl">
-                            <label class="form-contest__label-text" for=""
+                        <div class="form-contest__bl form-contest__bl_row">
+                            <label
+                                class="form-contest__label-text form-contest__label-text_indent-right"
+                                for="input-patronymic"
                                 >Отчество:</label
                             >
                             <input
                                 class="form-contest__input-text"
+                                id="input-patronymic"
                                 type="text"
                                 placeholder="Ну и отчество тоже"
                             />
@@ -114,7 +128,7 @@
                     <!-- /.form-contest__box -->
 
                     <fieldset
-                        class="form-contest__box form-contest__box_bg-gray"
+                        class="form-contest__box form-contest__box_bg-gray form-contest__box_border form-contest__box_order-4"
                     >
                         <legend
                             class="form-contest__subtitle form-contest__subtitle_bg-gray"
@@ -199,32 +213,63 @@
                     </fieldset>
                     <!-- /.form-contest__box -->
 
-                    <fieldset class="form-contest__box">
-                        <div class="form-contest__bl">
-                            <label class="form-contest__label-text" for=""
+                    <fieldset
+                        class="form-contest__box form-contest__box_border form-contest__box_order-3"
+                    >
+                        <legend
+                            class="form-contest__subtitle form-contest__subtitle_hidden"
+                        >
+                            Контактная информация
+                        </legend>
+                        <div
+                            class="form-contest__bl form-contest__bl_reverse-column"
+                        >
+                            <label
+                                class="form-contest__label-text form-contest__label-text_indent-top-left"
+                                for="input-tel"
                                 >Номер телефона</label
                             >
                             <input
                                 class="form-contest__input-text"
+                                id="input-tel"
                                 type="tel"
                                 placeholder="Номер, пожалуйста"
                             />
+                            <span class="form-contest__box-icon">
+                                <svg width="19.697px" height="19.696px">
+                                    <use
+                                        href="../img/svg-sprite.svg#icon-phone"
+                                    ></use>
+                                </svg>
+                            </span>
                         </div>
-                        <div class="form-contest__bl">
-                            <label class="form-contest__label-text" for=""
+                        <div
+                            class="form-contest__bl form-contest__bl_reverse-column"
+                        >
+                            <label
+                                class="form-contest__label-text form-contest__label-text_indent-top-left"
+                                for="input-email"
                                 >Адрес почты</label
                             >
                             <input
                                 class="form-contest__input-text"
+                                id="input-email"
                                 type="email"
                                 placeholder="Введите почту *"
                             />
+                            <span class="form-contest__box-icon">
+                                <svg width="17.988px" height="13.966px">
+                                    <use
+                                        href="../img/svg-sprite.svg#icon-mail"
+                                    ></use>
+                                </svg>
+                            </span>
                         </div>
                     </fieldset>
                     <!-- /.form-contest__box -->
 
                     <fieldset
-                        class="form-contest__box form-contest__box_bg-gray"
+                        class="form-contest__box form-contest__box_bg-gray form-contest__box_border form-contest__box_order-2"
                     >
                         <legend
                             class="form-contest__subtitle form-contest__subtitle_bg-gray"
@@ -270,9 +315,11 @@
                         >
                     </fieldset>
                     <!-- /.form-contest__box -->
-                    <fieldset class="form-contest__box">
+                    <fieldset
+                        class="form-contest__box form-contest__box_border"
+                    >
                         <legend class="form-contest__subtitle">
-                            Опишите эмоции
+                            Опишите свои эмоции
                         </legend>
 
                         <textarea
@@ -283,15 +330,19 @@
                         ></textarea>
                     </fieldset>
                     <!-- /.form-contest__box -->
-                    <button class="form-contest__btn btn-rectangle">
-                        Отправить форму
-                    </button>
-                    <p class="form-contest__mandatory-conditions">
-                        <span class="form-contest__mandatory-conditions_red"
-                            >*</span
-                        >
-                        &mdash; обязательные поля
-                    </p>
+
+                    <div class="form-contest__wrap-flex">
+                        <button class="form-contest__btn btn-rectangle">
+                            Отправить форму
+                        </button>
+                        <p class="form-contest__mandatory-conditions">
+                            <span class="form-contest__mandatory-conditions_red"
+                                >*</span
+                            >
+                            &mdash; обязательные поля
+                        </p>
+                    </div>
+                    <!-- /.form-contest__wrap-flex -->
                 </form>
             </main>
             <!-- /.contest -->
