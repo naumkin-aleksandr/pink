@@ -81,7 +81,7 @@
 
                 <form class="contest__form form-contest" action="#">
                     <fieldset
-                        class="form-contest__box form-contest__box_order-1"
+                        class="form-contest__box form-contest__grid-item_1"
                     >
                         <div class="form-contest__bl form-contest__bl_row">
                             <label
@@ -128,7 +128,7 @@
                     <!-- /.form-contest__box -->
 
                     <fieldset
-                        class="form-contest__box form-contest__box_bg-gray form-contest__box_border form-contest__box_order-4"
+                        class="form-contest__box form-contest__box_fixed-height form-contest__box_bg-gray form-contest__box_border form-contest__grid-item_4"
                     >
                         <legend
                             class="form-contest__subtitle form-contest__subtitle_bg-gray"
@@ -214,7 +214,7 @@
                     <!-- /.form-contest__box -->
 
                     <fieldset
-                        class="form-contest__box form-contest__box_border form-contest__box_order-3"
+                        class="form-contest__box form-contest__box_border form-contest__box_flex-row form-contest__grid-item_3"
                     >
                         <legend
                             class="form-contest__subtitle form-contest__subtitle_hidden"
@@ -269,7 +269,7 @@
                     <!-- /.form-contest__box -->
 
                     <fieldset
-                        class="form-contest__box form-contest__box_bg-gray form-contest__box_border form-contest__box_order-2"
+                        class="form-contest__box form-contest__box_bg-gray form-contest__box_border form-contest__grid-item_2"
                     >
                         <legend
                             class="form-contest__subtitle form-contest__subtitle_bg-gray"
@@ -315,8 +315,9 @@
                         >
                     </fieldset>
                     <!-- /.form-contest__box -->
+
                     <fieldset
-                        class="form-contest__box form-contest__box_border"
+                        class="form-contest__box form-contest__box_border form-contest__grid-item_5"
                     >
                         <legend class="form-contest__subtitle">
                             Опишите свои эмоции
@@ -331,7 +332,9 @@
                     </fieldset>
                     <!-- /.form-contest__box -->
 
-                    <div class="form-contest__wrap-flex">
+                    <div
+                        class="form-contest__wrap-flex form-contest__grid-item_6"
+                    >
                         <button class="form-contest__btn btn-rectangle">
                             Отправить форму
                         </button>
@@ -339,7 +342,12 @@
                             <span class="form-contest__mandatory-conditions_red"
                                 >*</span
                             >
-                            &mdash; обязательные поля
+                            &mdash; обязательные
+                            <span
+                                class="form-contest__mandatory-conditions_hidden"
+                                >для заполнения</span
+                            >
+                            поля
                         </p>
                     </div>
                     <!-- /.form-contest__wrap-flex -->

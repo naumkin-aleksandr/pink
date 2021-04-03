@@ -12,7 +12,7 @@
     }
 
     &__text {
-        padding: 50px 20px 10px;
+        padding: 50px 20px 50px;
         line-height: 30px;
         text-align: center;
 
@@ -34,11 +34,27 @@
         }
 
         &__text {
-            padding: 100px 80px 40px;
+            padding: 100px 80px 80px;
             font-size: 18px;
 
             &_hidden {
                 display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .contest {
+        &__title {
+            padding: 0 100px;
+        }
+
+        &__text {
+            padding: 100px 200px 80px;
+
+            &_hidden {
+                display: inline;
             }
         }
     }
