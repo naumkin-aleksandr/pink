@@ -83,3 +83,53 @@ function init() {
 
     myMap.geoObjects.add(myPlacemark);
 }
+
+// modal window form contest
+const btnFormContest = document.querySelector("#btn-form-contest");
+const emailInput = document.querySelector("#input-email");
+const nameInput = document.querySelector("#input-name");
+const surnameInput = document.querySelector("#input-surname");
+const sentMessage = document.querySelector("#sent-message");
+const errorMessage = document.querySelector("#error-message");
+
+btnFormContest.addEventListener("click", showModalWindow);
+sentMessage.addEventListener("click", closeModalWindow.bind(null, sentMessage));
+errorMessage.addEventListener(
+    "click",
+    closeModalWindow.bind(null, errorMessage)
+);
+
+removeErrorInput(emailInput, nameInput, surnameInput);
+
+function showModalWindow(event) {
+    event.preventDefault();
+
+    if (checkEnteredData(emailInput, nameInput, surnameInput)) {
+        sentMessage.style.display = "block";
+    } else {
+        errorMessage.style.display = "block";
+        showErrorInput(emailInput, nameInput, surnameInput);
+    }
+}
+
+function closeModalWindow(elem) {
+    elem.style.display = "none";
+}
+
+function checkEnteredData(...arrayElements) {
+    return arrayElements.every((el) => el.value.trim().length > 0);
+}
+
+function showErrorInput(...arrayElements) {
+    arrayElements
+        .filter((el) => el.value.trim().length === 0)
+        .map((el) => el.classList.add("form-contest__input-text_error"));
+}
+
+function removeErrorInput(...arrayElements) {
+    arrayElements.map((el) =>
+        el.addEventListener("focus", () => {
+            el.classList.remove("form-contest__input-text_error");
+        })
+    );
+}
